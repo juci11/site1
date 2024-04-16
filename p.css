@@ -1,0 +1,338 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  height: 500vh;
+  background-color: #000;
+}
+
+.container{
+  max-width: 1280px;
+  margin: auto;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+  width: 100%;
+  padding: 60px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: .5s;
+}
+
+header.rolagem{
+  background-color: #fff;
+  padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+  color: #FE775A;
+}
+
+header i{
+  font-size: 30px;
+  color: #ffffff;
+}
+
+header ul{
+  list-style-type: none;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 0 40px;
+}
+
+
+/*HOME E ETC*/
+header ul li a{
+  color: #000000;
+  text-decoration: none;
+}
+/*BOTAO*/
+.btn-contato {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fffbfb;
+  background-image: linear-gradient(to right, #66faff, #6666ff); /* Gradiente misturando cores */
+  outline: none;
+}
+
+.btn-contato:hover {
+  background-image: linear-gradient(to right, #6666ff, #7666a3); /* Gradiente invertido ao passar o mouse */
+}
+
+/* Estilo adicional para o botão de contato */
+.btn-contato:active {
+  transform: translateY(1px); /* Efeito de clique */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Sombra ao clicar */
+}
+
+
+.banner{
+  height: 100vh;
+  background-image: url(cg.jpg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1{
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.banner h1 span{
+  color: #302eac;
+}
+
+.banner {
+  font-size: 1.5em;
+  color: #000000;
+
+}
+
+
+nav ul li{
+  font-family: "Creepster",sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+/* Seu CSS existente */
+
+.projetos {
+  height: 100vh;
+  background-image: url('dc.png');
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.projetos-title {
+  font-size: 4em;
+  color: #fff; /* Cor do texto */
+  text-align: center; /* Alinhar texto ao centro */
+  margin-top: 20px; /* Espaçamento do topo */
+}
+.projetos h1 span{
+  color: #8f2eac;
+}
+
+.square-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.sistema-solar {
+  background-image: url('sistema_solar.jpg');
+  background-size: cover;
+  border-radius: 30%;
+}
+
+.filmes {
+  background-image: url('filmes.jpg');
+  background-size: cover;
+  border-radius: 30%;
+}
+
+
+.btn-home {
+  width: 120px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-image: linear-gradient(to right, #FF6B6B, #6B6BFF); /* Gradiente misturando cores */
+  outline: none;
+}
+
+.btn-home:hover {
+  background-image: linear-gradient(to right, #6B6BFF, #FF6B6B); /* Gradiente invertido ao passar o mouse */
+}
+
+/* Estilo adicional para o botão */
+.btn-home:active {
+  transform: translateY(1px); /* Efeito de clique */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Sombra ao clicar */
+}
+
+
+/* Seu CSS existente */
+
+.projetos-title {
+  font-size: 4em;
+  color: #fff; /* Cor do texto */
+  text-align: center; /* Alinhar texto ao centro */
+  margin-top: 20px; /* Espaçamento do topo */
+  background-image: linear-gradient(to right, #66baff, #6666ff); /* Gradiente misturando cores */
+  -webkit-background-clip: text; /* Clip de texto para aplicar gradiente */
+  background-clip: text; /* Clip de texto para aplicar gradiente */
+  -webkit-text-fill-color: transparent; /* Texto transparente para exibir o gradiente */
+}
+
+/* Estilo adicional para o texto "PROJETOS" */
+.projetos-title:hover {
+  background-image: linear-gradient(to right, #6666ff, #6669ff); /* Gradiente invertido ao passar o mouse */
+}
+
+.btn-nav {
+  background-image: linear-gradient(to right, #FF6B6B, #6B6BFF); /* Gradiente misturando cores */
+  -webkit-background-clip: text; /* Clip de texto para aplicar gradiente */
+  background-clip: text; /* Clip de texto para aplicar gradiente */
+  -webkit-text-fill-color: transparent; /* Texto transparente para exibir o gradiente */
+  cursor: pointer; /* Cursor do mouse ao passar sobre o botão */
+  border: none; /* Remover borda */
+  outline: none; /* Remover contorno ao clicar */
+  padding: 0; /* Remover padding */
+  font-size: inherit; /* Tamanho de fonte herdado */
+  display: inline-block; /* Exibir como bloco */
+  background-color: #8ac8f1; /* Cor de fundo */
+  padding: 10px 20px; /* Espaçamento interno */
+  margin: 0 10px; /* Margem */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+.btn-nav:hover {
+  background-image: linear-gradient(to right, #6B6BFF, #FF6B6B); /* Gradiente invertido ao passar o mouse */
+}
+
+/* Seu CSS existente */
+
+/* Adicione as regras de mídia query para dispositivos móveis e tablets */
+@media only screen and (max-width: 600px) {
+  /* Estilos para dispositivos móveis */
+  .banner h1 {
+    font-size: 2.5em; /* Reduz o tamanho da fonte para telas menores */
+  }
+  
+  .projetos-title {
+    font-size: 2em; /* Reduz o tamanho da fonte para telas menores */
+  }
+  
+  /* Adicione outras regras de estilo conforme necessário para dispositivos móveis */
+}
+
+@media only screen and (min-width: 601px) {
+  /* Estilos para tablets e telas maiores */
+  .banner h1 {
+    font-size: 3em; /* Ajuste o tamanho da fonte para telas maiores */
+  }
+  
+  .projetos-title {
+    font-size: 3.5em; /* Ajuste o tamanho da fonte para telas maiores */
+  }
+  
+  /* Adicione outras regras de estilo conforme necessário para tablets e telas maiores */
+}
+
+.mobile-menu div{
+  cursor: pointer;
+  display: none;
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1{
+  transform: rotate(-45deg) translate(-8px, 8px);
+
+}
+
+.mobile-menu.active .line2{
+
+  opacity: 0;
+}
+
+.mobile-menu.active .line3{
+  transform: rotate(45deg) translate(-5px, 7px);
+
+}
